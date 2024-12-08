@@ -1,5 +1,7 @@
-import React from 'react'
+import * as css from "./app.css";
+
+console.log(css.pepe)
 
 export const App = () => {
-    return <div>'Hello'</div>
+    return <div className={css.pepe}>'Hello'</div>
 }

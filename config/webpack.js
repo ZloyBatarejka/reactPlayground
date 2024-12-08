@@ -25,6 +25,22 @@ module.exports = {
                 options: swcConfig,
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: "css-loader",
+                        options: {
+                            esModule: true,
+                            modules: {
+                                namedExport: true,
+                            },
+                        },
+                    },
+                ],
+            },
+
         ],
     },
     cache: {

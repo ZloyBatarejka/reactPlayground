@@ -6,6 +6,8 @@
 .pnp.js
 /.webpack-cache
 
+./idea
+.idea
 
 # testing
 /coverage
